@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKEANОLOGIST | Okeanologiya bilimdoni</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="logo">OCEAN<span>LOGIST</span></div>
+        <div class="header-label">BILIMLAR MAYDONI</div>
+    </header>
+
+    <main class="container">
+
+        <section id="home-screen" class="screen active">
+            <div class="ocean-icon">🌊</div>
+            <p class="eyebrow">OKEANLAR SIRLARINI KASHF ETING</p>
+            <h1>OKEANOLOGIYA<br><span>BILIMDONI</span></h1>
+            <p class="description">
+                Okeanlar, dengizlar, suv oqimlari va suv osti hayoti
+                haqidagi bilimingizni sinab ko‘ring!
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <strong>48</strong>
+                    <span>Jami savol</span>
+                </div>
+                <div class="stat">
+                    <strong>4</strong>
+                    <span>Daraja</span>
+                </div>
+                <div class="stat">
+                    <strong>10</strong>
+                    <span>Har urinishda</span>
+                </div>
+            </div>
+
+            <h3>Qiyinlik darajasini tanlang</h3>
+
+            <div class="levels">
+                <button class="level easy" data-level="easy">
+                    <span>01</span>
+                    <strong>Oson</strong>
+                    <small>Boshlang‘ich bilimlar</small>
+                </button>
+
+                <button class="level medium" data-level="medium">
+                    <span>02</span>
+                    <strong>O‘rta</strong>
+                    <small>Asosiy tushunchalar</small>
+                </button>
+
+                <button class="level hard" data-level="hard">
+                    <span>03</span>
+                    <strong>Qiyin</strong>
+                    <small>Chuqur bilimlar</small>
+                </button>
+
+                <button class="level expert" data-level="expert">
+                    <span>04</span>
+                    <strong>Ekspert</strong>
+                    <small>Professional daraja</small>
+                </button>
+            </div>
+
+            <div class="record">
+                Eng yuqori natijangiz: <strong id="best-score">0</strong>/10
+            </div>
+        </section>
+
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-top">
+                <span id="level-name">Oson</span>
+                <span id="question-counter">1 / 10</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-number" id="question-number">SAVOL 01</div>
+                <h2 id="question-text">Savol matni</h2>
+                <div id="answers" class="answers"></div>
+                <div id="explanation" class="explanation"></div>
+            </div>
+
+            <div class="quiz-bottom">
+                <span>To‘g‘ri javoblar: <strong id="correct-count">0</strong></span>
+                <button id="next-btn" disabled>Keyingi savol →</button>
+            </div>
+        </section>
+
+        <section id="result-screen" class="screen">
+            <div class="result-icon">🏆</div>
+            <p class="eyebrow">SINOV YAKUNLANDI</p>
+            <h1>NATIJANGIZ</h1>
+
+            <div class="score-circle">
+                <strong id="final-score">0</strong>
+                <span>/ 10</span>
+            </div>
+
+            <h2 id="result-title">Ajoyib!</h2>
+            <p id="result-message"></p>
+
+            <div class="result-details">
+                <div>
+                    <strong id="correct-result">0</strong>
+                    <span>To‘g‘ri</span>
+                </div>
+                <div>
+                    <strong id="wrong-result">0</strong>
+                    <span>Noto‘g‘ri</span>
+                </div>
+                <div>
+                    <strong id="percentage">0%</strong>
+                    <span>Natija</span>
+                </div>
+            </div>
+
+            <button id="retry-btn" class="main-btn">Qayta topshirish</button>
+            <button id="home-btn" class="secondary-btn">Bosh sahifaga qaytish</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Loyiha muallifi: <strong>AKRAMJONOVA JADRA MARATOVNA</strong></p>
+        <span>OKEANOLOGIST © 2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
